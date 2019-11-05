@@ -1,40 +1,8 @@
-from CsvReader import CsvReader
-import math as math
+# from CsvReader import CsvReader
+# import math as math
 
-def subtraction(a, b):
-    a = int(a)
-    b = int(b)
-    c = b - a
-    return c
-
-def addition(a, b):
-    a = int(a)
-    b = int(b)
-    c = a + b
-    return c
-
-def multiplication(a, b):
-    a = int(a)
-    b = int(b)
-    c = a*b
-    return c
-
-
-def division(a, b):
-    a = int(a)
-    b = int(b)
-    c = round(b/a, 9)
-    return c
-
-def square(a):
-    a = int(a)
-    b = a*a
-    return b
-
-def squareroot(a):
-    a = float(a)
-    b = round(a**(1.0/2),8)
-    return b
+from Calculator.Subtraction import subtraction
+from Calculator.Addition import addition
 
 class Calculator:
     result = 0
