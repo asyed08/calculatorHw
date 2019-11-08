@@ -1,9 +1,13 @@
-from Calculator.Subtraction import subtraction
-from Calculator.Addition import addition
-from Calculator.Multiplication import multiplication
-from Calculator.Division import division
-from Calculator.Square import square
-from Calculator.SquareRoot import squareroot
+
+# from CsvReader import CsvReader
+# import math as math
+
+from Calculator.subtraction import subtraction
+from Calculator.addition import addition
+from Calculator.division import division
+from Calculator.multiplication import multiplication
+from Calculator.square import square
+from Calculator.squareroot import squareroot
 
 
 class Calculator:
