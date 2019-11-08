@@ -1,4 +1,6 @@
 from Calculator.Calculator import Calculator
+
+
 from CsvReader.CsvReader import CsvReader
 from Statistics.mean import mean
 
@@ -12,3 +14,4 @@ class Statistics(Calculator):
     def mean(self):
         self.result = mean(self.data)
         return self.result
+
