@@ -1,7 +1,7 @@
 from Calculator.addition import addition
 from Calculator.division import division
 
-def mean(data):
+def popmean(data):
     total_n = len(data)
     sum = 0
     for i in data:
