@@ -2,11 +2,11 @@ import csv
 from Fileutilities.absolutepath import absolutepath
 
 
- def ClassFactory(class_name, dictionary):
+def ClassFactory(class_name, dictionary):
      return type(class_name, (object,), dictionary)
 
 
- class CsvReader:
+class CsvReader:
      data = []
 
      def __init__(self, filepath):
