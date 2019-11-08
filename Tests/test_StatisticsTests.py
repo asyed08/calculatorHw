@@ -10,15 +10,14 @@ class MyTestCase(unittest.TestCase):
         self.statistics = Statistics('Tests/Data/PopulationData.csv')
 
 
+
     def test_instantiate_statscalculator(self):
         self.assertIsInstance(self.statistics, Statistics)
 
     def test_pop_mean_statistics(self):
-        test_data = CsvReader('Tests/Data/PopulationData.csv').data
         answers = CsvReader('Tests/Data/StatsAnswers.csv').data
-        for column in test_data:
-            result = answers(float(column['Population Mean']))
-            self.assertEqual(self.test_data.popmean['Number'], result)
+        for row in answers:
+            self.assertEqual(self.statistics.popmean(self),int(row['Population Mean']))
 
 
 if __name__ == '__main__':
