@@ -1,5 +1,4 @@
 import csv
-import pprint
 
 
 def ClassFactory(class_name, dictionary):
@@ -18,4 +17,8 @@ class CsvReader:
                 self.data.append(row)
         pass
 
-
+    def return_data_as_objects(self, class_name):
+        objects = []
+        for i in self.data:
+            objects.append(ClassFactory(class_name, i))
+        return objects
