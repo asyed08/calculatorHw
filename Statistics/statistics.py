@@ -1,6 +1,5 @@
 from Calculator.Calculator import Calculator
 from CsvReader.CsvReader import CsvReader
-from Statistics.mean import mean
 
 class Statistics(Calculator):
     data = []
@@ -9,6 +8,6 @@ class Statistics(Calculator):
         self.data = CsvReader(filepath)
         super().__init__()
 
-    def mean(self):
+    def popmean(self):
         self.result = mean(self.data)
         return self.result
