@@ -1,3 +1,4 @@
+
 # from CsvReader import CsvReader
 # import math as math
 
@@ -7,6 +8,7 @@ from Calculator.division import division
 from Calculator.multiplication import multiplication
 from Calculator.square import square
 from Calculator.squareroot import squareroot
+
 
 class Calculator:
     result = 0
