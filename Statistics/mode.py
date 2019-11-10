@@ -18,6 +18,6 @@ def mode(a, b, c, d, e):
             for j in data:
                 if(j == i):
                     count = count + 1
-                if
+        return a
     except ValueError:
         print("No values with multiple frequencies")
