@@ -3,6 +3,8 @@ from Statistics.populationmean import popmean
 from Statistics.samplemean import sampmean
 from Statistics.median import median
 from Statistics.mode import mode
+from Statistics.population_variance import population_variance
+from Statistics.population_standard_deviation import population_standard_deviation
 from pprint import pprint
 class Statistics(Calculator):
     def __init__(self):
@@ -21,6 +23,14 @@ class Statistics(Calculator):
         self.result = median(a,b,c,d,e,f,g)
         return self.result
 
+    def pop_variance(self, a, b, c, d, e, f,):
+        self.result = population_variance(a, b, c, d, e, f)
+        return self.result
+
+    def population_standard_deviation(self, a, b, c, d, e, f):
+        self.result = population_standard_deviation(a, b, c, d, e, f)
+        return self.result
+      
     def mode(self, a, b, c, d, e):
         self.result = mode(a, b, c, d, e)
         return self.result
