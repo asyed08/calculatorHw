@@ -42,8 +42,8 @@ class MyTestCase(unittest.TestCase):
         test_data = CsvReader("Tests/Data/mode.csv").data
         pprint(test_data)
         for row in test_data:
-            result = int(row['Result'])
-            self.assertEqual(self.statistics.mode(row['Value 1'], row['Value 2']), result)
+            result = float(row['Result'])
+            self.assertEqual(self.statistics.mode(row['Value 1'], row['Value 2'], row['Value 3'], row['Value 4'], row['Value 5']), result)
             self.assertEqual(self.statistics.result, result)
 
 if __name__ == '__main__':
