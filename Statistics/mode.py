@@ -21,6 +21,6 @@ def mode(a, b, c, d, e):
             if(count > currentmaxoccur):
                 currentmaxoccur = count
                 mode = int(i)
-         return mode
+        return mode
     except ValueError:
         print("No values with multiple frequencies")
