@@ -1,4 +1,6 @@
 import unittest
+from pprint import pprint
+
 from Calculator.Calculator import Calculator
 from CsvReader.CsvReader import CsvReader
 
@@ -49,6 +51,22 @@ class MyTestCase(unittest.TestCase):
         for row in test_data:
             self.assertEqual(self.calculator.squareroot(row['Value 1']), round(float(row['Result']),8))
             self.assertEqual(self.calculator.result, round(float(row['Result']),8))
+
+   def test_median(self):
+        test_data = CsvReader("Tests/Data/median.csv").data
+        pprint(test_data)
+        for row in test_data:
+           result = float(row['Result'])
+           self.assertEqual(self.statistics.med(row['Value 1'], row['Value 2'], row['Value 3'], row['Value 4'], row['Value 5'], row['Value 6'], row['Value 7']), result)
+           self.assertEqual(self.statistics.result, result)
+
+ def test_mode(self):
+        test_data = CsvReader("Tests/Data/mode.csv").data
+        pprint(test_data)
+        for row in test_data:
+           result = int(row['Result'])
+           self.assertEqual(self.statistics.mode(row['Value 1'], row['Value 2']), result)
+           self.assertEqual(self.statistics.result, result)
 
 
 if __name__ == '__main__':
