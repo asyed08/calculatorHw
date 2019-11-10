@@ -6,9 +6,9 @@
 
 |     Part 1     |               Part 2               |
 |:--------------:|:----------------------------------:|
-|    Addition    |   [Population Mean](PopulationMean.md)          |
-|   Subtraction  |               [Median](median.md)               |
-| Multiplication |                [Mode](mode.md)                |
+|    Addition    |   [Population Mean](definitons/PopulationMean.md)          |
+|   Subtraction  |               [Median](definitons/median.md)               |
+| Multiplication |                [Mode](definitons/mode.md)                |
 |    Division    |    Population Standard Deviation   |
 |     Square     |  Variance of Population Proportion |
 |   Square Root  |               Z-Score              |
