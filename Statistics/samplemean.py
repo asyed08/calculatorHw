@@ -8,6 +8,7 @@ def sampmean(samplesize, a ,b, c, d, e):
         c = float(c)
         d = float(d)
         e = float(e)
+        samplesize = int(samplesize)
         data = []
         data.append(a)
         data.append(b)
