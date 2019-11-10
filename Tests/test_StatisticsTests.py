@@ -34,7 +34,7 @@ class MyTestCase(unittest.TestCase):
         for row in test_data:
             result = float(row['Result'])
             self.assertEqual(
-                self.statistics.med(row['Value 1'], row['Value 2'], row['Value 3'], row['Value 4'], row['Value 5'],
+                self.statistics.median(row['Value 1'], row['Value 2'], row['Value 3'], row['Value 4'], row['Value 5'],
                                     row['Value 6'], row['Value 7']), result)
             self.assertEqual(self.statistics.result, result)
 
