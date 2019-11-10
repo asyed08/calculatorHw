@@ -16,8 +16,8 @@ def sampmean(samplesize, a ,b, c, d, e):
         data.append(d)
         data.append(e)
         sample = []
-        for i in range(0,samplesize):
-            sample.append(data.index(i))
+        for i in range(1,samplesize):
+            sample.append(int(data[i]))
         total_n = len(sample)
         sum = 0
         for i in sample:
