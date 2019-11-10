@@ -14,7 +14,7 @@ def popmean(a, b, c):
         sum = 0
         for i in data:
             sum = addition(sum,i)
-        mean = division(sum,total_n)
+        mean = division(total_n,sum)
         pprint(mean)
         return mean
     except ZeroDivisionError:
