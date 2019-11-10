@@ -7,7 +7,7 @@ from pprint import pprint
 
 class MyTestCase(unittest.TestCase):
     def setUp(self) -> None:
-        self.statistics = Statistics('Tests/Data/PopMean.csv')
+        self.statistics = Statistics()
 
 
 
