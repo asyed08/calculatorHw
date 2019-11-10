@@ -1,15 +1,11 @@
 from Calculator.Calculator import Calculator
 from Statistics.populationmean import popmean
-from CsvReader.CsvReader import CsvReader
 
 class Statistics(Calculator):
-    data = []
-
-    def __init__(self, filepath):
-        self.data = CsvReader(filepath)
+    def __init__(self):
         super().__init__()
 
-    def popmean(self):
-        self.result = popmean(self.data)
+    def popmean(self, a, b, c):
+        self.result = popmean(a, b, c)
         return self.result
 

@@ -1,11 +1,22 @@
 from Calculator.addition import addition
 from Calculator.division import division
 
-def popmean(data):
-    total_n = len(data)
-    sum = 0
-    for i in data:
-        sum = addition(sum,i)
-    mean = 0
-    mean = division(sum,total_n)
-    return mean
+def popmean(a, b, c):
+    try:
+        a = float(a)
+        b = float(b)
+        c = float(c)
+        data = []
+        data.append(a)
+        data.append(b)
+        data.append(c)
+        total_n = len[data]
+        sum = 0
+        for i in data:
+            sum = addition(sum,i)
+        mean = division(sum,total_n)
+        return mean
+    except ZeroDivisionError:
+        print("Divide by Zero Error")
+    except ValueError:
+        print("Only float arguments are valid.")
