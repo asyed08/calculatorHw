@@ -1,6 +1,5 @@
 from Calculator.addition import addition
 from Calculator.division import division
-import random
 
 def sampmean(samplesize, a ,b, c, d, e):
     try:
@@ -15,7 +14,9 @@ def sampmean(samplesize, a ,b, c, d, e):
         data.append(c)
         data.append(d)
         data.append(e)
-        sample = random.sample(data,samplesize)
+        sample = []
+        for i in range(0,samplesize):
+            sample.append(data.index(i))
         total_n = len(sample)
         sum = 0
         for i in sample:
