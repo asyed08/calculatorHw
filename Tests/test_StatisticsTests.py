@@ -28,5 +28,23 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.statistics.sampmean(row['SampleSize'],row['Num1'],row['Num2'],row['Num3'],row['Num4'],row['Num5']),answer)
             self.assertEqual(self.statistics.result, answer)
 
+    def test_median(self):
+        test_data = CsvReader("Tests/Data/median.csv").data
+        pprint(test_data)
+        for row in test_data:
+            result = float(row['Result'])
+            self.assertEqual(
+                self.statistics.med(row['Value 1'], row['Value 2'], row['Value 3'], row['Value 4'], row['Value 5'],
+                                    row['Value 6'], row['Value 7']), result)
+            self.assertEqual(self.statistics.result, result)
+
+    def test_mode(self):
+        test_data = CsvReader("Tests/Data/mode.csv").data
+        pprint(test_data)
+        for row in test_data:
+            result = int(row['Result'])
+            self.assertEqual(self.statistics.mode(row['Value 1'], row['Value 2']), result)
+            self.assertEqual(self.statistics.result, result)
+
 if __name__ == '__main__':
     unittest.main()
