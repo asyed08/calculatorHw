@@ -67,7 +67,7 @@ class MyTestCase(unittest.TestCase):
         for row in test_data:
             result = float(row['Answer'])
             self.assertEqual(round(self.statistics.sample_standard_deviation(row['SampleSize'],row['Num1'],row['Num2'],row['Num3'],row['Num4'],row['Num5'],row['Num6'],row['Num7'],row['Num8']),2), result)
-            self.assertEqual(self.statistics.result, result)
+            self.assertEqual(round(self.statistics.result,2), result)
 
 if __name__ == '__main__':
     unittest.main()
