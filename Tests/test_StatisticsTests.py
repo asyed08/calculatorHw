@@ -66,7 +66,7 @@ class MyTestCase(unittest.TestCase):
         test_data = CsvReader("Tests/Data/Sample_Standard_Deviation.csv").data
         for row in test_data:
             result = float(row['Answer'])
-            self.assertEqual(round(self.statistics.sample_standard_deviation(row['SampleSize'],row['Num1'],row['Num2'],row['Num3'],row['Num4'],row['Num5'],row['Num6'],row['Num7'],row['Num8'],row['Num9']),2), result)
+            self.assertEqual(round(self.statistics.sample_standard_deviation(row['SampleSize'],row['Num1'],row['Num2'],row['Num3'],row['Num4'],row['Num5'],row['Num6'],row['Num7'],row['Num8']),2), result)
             self.assertEqual(self.statistics.result, result)
 
 if __name__ == '__main__':
