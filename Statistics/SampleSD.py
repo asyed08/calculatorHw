@@ -1,4 +1,5 @@
 from Statistics.PopulationSD import population_standard_deviation
+from pprint import pprint
 
 def sample_standard_deviation(samplesize,a,b,c,d,e,f,g,h):
     try:
@@ -21,9 +22,11 @@ def sample_standard_deviation(samplesize,a,b,c,d,e,f,g,h):
         data.append(g)
         data.append(h)
         sample = []
-        for i in range(1,samplesize):
+        for i in range(0,samplesize-1):
             sample.append(int(data[i]))
-        return population_standard_deviation(sample[1],sample[2],sample[3],sample[4],sample[5],sample[6])
+        for i in sample:
+            pprint(i)
+        return population_standard_deviation(sample[0],sample[1],sample[2],sample[3],sample[4],sample[5])
     except ZeroDivisionError:
        print("Cannot divide by zero")
     except ValueError:
