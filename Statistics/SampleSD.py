@@ -22,7 +22,7 @@ def sample_standard_deviation(samplesize,a,b,c,d,e,f,g,h):
         data.append(g)
         data.append(h)
         sample = []
-        for i in range(0,samplesize-1):
+        for i in range(0,samplesize):
             sample.append(int(data[i]))
         for i in sample:
             pprint(i)
