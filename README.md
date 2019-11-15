@@ -6,14 +6,15 @@
 
 |     Part 1     |               Part 2               |
 |:--------------:|:----------------------------------:|
+
 |    Addition    |   [Population Mean](definitons/PopulationMean.md)          |
 |   Subtraction  |               [Median](definitons/median.md)               |
 | Multiplication |                [Mode](definitons/mode.md)                |
-|    Division    |    Population Standard Deviation   |
-|     Square     |  Variance of Population Proportion |
-|   Square Root  |               Z-Score              |
-|                |         Standardized Score         |
-|                | Population Correlation Coefficient |
+|    Division    |    [Population Standard Deviation](definitons/PopulationStandardDeviation.md)   |
+|     Square     |  [Variance of Population Proportion](definitons/VariancePopulationProportion.md) |
+|   Square Root  |               [Z-Score](definitons/Zscore.md)              |
+|                |         [Standardized Score](definitons/Zscore.md)         |
+|                | [Population Correlation Coefficient](definitons/PopulationCorrelationCoefficient.md) |
 |                |         [Confidence Interval](definitons/confidenceinterval.md)        |
 |                |         [Population Variance](definitons/populationvariance.md)        |
 |                |               [P Value](definitons/pvalue.md)              |
