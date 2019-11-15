@@ -17,14 +17,14 @@ def population_standard_deviation(a, b, c, d, e, f):
        d4 = addition(c3,e)
        sum = addition(d4,f)
 
-       mean = sum/len(xs)
+       mean = sum/(len(xs))
        sum1 = 0
        for i in xs:
             curr = float(i - mean)
             z = square(curr)
             sum1 = sum1 + z
-       num1 = sum1/len(xs)
-       answer = squareroot(num1)
+       num1 = sum1/(len(xs))
+       answer = float(squareroot(num1))
        return answer
     except ZeroDivisionError:
        print("Cannot divide by zero")
