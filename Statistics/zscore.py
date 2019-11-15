@@ -2,6 +2,7 @@ from Statistics.PopulationSD import population_standard_deviation
 
 def zscore(datapoint, a, b, c, d, e, f):
     try:
+        datapoint = float(datapoint)
         a = float(a)
         b = float(b)
         c = float(c)
