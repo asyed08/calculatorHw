@@ -6,6 +6,7 @@ from Statistics.mode import mode
 from Statistics.PopulationVar import population_variance
 from Statistics.PopulationSD import population_standard_deviation
 from Statistics.SampleSD import sample_standard_deviation
+from Statistics.zscore import zscore
 from pprint import pprint
 class Statistics(Calculator):
     def __init__(self):
@@ -38,4 +39,8 @@ class Statistics(Calculator):
 
     def sample_standard_deviation(self,samplesize,a,b,c,d,e,f,g,h):
         self.result = sample_standard_deviation(samplesize,a,b,c,d,e,f,g,h)
+        return self.result
+
+    def zscore(self, datapoint, a,b,c,d,e,f):
+        self.result = zscore(datapoint,a,b,c,d,e,f)
         return self.result
