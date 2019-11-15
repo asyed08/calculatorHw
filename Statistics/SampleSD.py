@@ -21,9 +21,9 @@ def sample_standard_deviation(samplesize,a,b,c,d,e,f,g,h):
         data.append(g)
         data.append(h)
         sample = []
-        for i in range(0,samplesize-1):
+        for i in range(1,samplesize):
             sample.append(int(data[i]))
-        return population_standard_deviation(sample[0],sample[1],sample[2],sample[3],sample[4],sample[5])
+        return population_standard_deviation(sample[1],sample[2],sample[3],sample[4],sample[5],sample[6])
     except ZeroDivisionError:
        print("Cannot divide by zero")
     except ValueError:
