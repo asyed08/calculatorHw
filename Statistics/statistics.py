@@ -3,8 +3,8 @@ from Statistics.populationmean import popmean
 from Statistics.samplemean import sampmean
 from Statistics.median import median
 from Statistics.mode import mode
-from Statistics.population_variance import population_variance
-from Statistics.population_standard_deviation import population_standard_deviation
+from Statistics.PopulationVar import population_variance
+from Statistics.PopulationSD import population_standard_deviation
 from pprint import pprint
 class Statistics(Calculator):
     def __init__(self):
