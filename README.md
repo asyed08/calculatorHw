@@ -14,11 +14,11 @@
 |   Square Root  |               Z-Score              |
 |                |         Standardized Score         |
 |                | Population Correlation Coefficient |
-|                |         Confidence Interval        |
-|                |         Population Variance        |
-|                |               P Value              |
-|                |             Proportion             |
-|                |             Sample Mean            |
-|                |      Sample Standard Deviation     |
-|                |    Variance of Sample Proportion   |
+|                |         [Confidence Interval](definitons/confidenceinterval.md)        |
+|                |         [Population Variance](definitons/populationvariance.md)        |
+|                |               [P Value](definitons/pvalue.md)              |
+|                |             [Proportion](definitons/Proportion.md)             |
+|                |             [Sample Mean](definitons/SampleMean.md)            |
+|                |      [Sample Standard Deviation](definitons/SampleStandardDeviation.md)     |
+|                |    [Variance of Sample Proportion](definitons/VarianceOfSampleProportion.md)   |
 
