@@ -9,11 +9,11 @@
 |    Addition    |   [Population Mean](PopulationMean.md)          |
 |   Subtraction  |               [Median](median.md)               |
 | Multiplication |                [Mode](mode.md)                |
-|    Division    |    Population Standard Deviation   |
-|     Square     |  Variance of Population Proportion |
-|   Square Root  |               Z-Score              |
-|                |         Standardized Score         |
-|                | Population Correlation Coefficient |
+|    Division    |    [Population Standard Deviation](PopulationStandardDeviation.md)  |
+|     Square     |  [Variance of Population Proportion](VariancePopulationProportion.md) |
+|   Square Root  |               [Z-Score](Zscore.md)              |
+|                |         [Standardized Score](Zscore.md)         |
+|                | [Population Correlation Coefficient](PopulationCorrelationCoefficient.md) |
 |                |         Confidence Interval        |
 |                |         Population Variance        |
 |                |               P Value              |
